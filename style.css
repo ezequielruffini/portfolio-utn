@@ -6,6 +6,12 @@
   animation: fadeInDown 1s ease-in-out;
 }
 
+.logoejr2 {
+  width: 35px;
+  height: auto;
+  object-fit: contain;
+}
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -77,6 +83,97 @@ header {
   from {
     opacity: 0;
     transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .logoejr2 {
+    width: 50px;
+  }
+}
+.sobre-mi {
+  background-color: #6c757d; /* Gris secundario Bootstrap */
+  color: white;
+  padding: 3rem 0;
+}
+
+.sobre-mi h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.sobre-mi p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .sobre-mi p {
+    font-size: 1.2rem;
+  }
+}
+
+.proyecto {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.img-proyecto {
+  transition: transform 0.5s ease;
+  filter: brightness(0.85);
+}
+
+.proyecto:hover .img-proyecto {
+  transform: scale(1.08);
+  filter: brightness(1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.85));
+  color: #fff;
+  text-align: center;
+  transition: bottom 0.5s ease;
+}
+
+.proyecto:hover .overlay {
+  bottom: 0;
+}
+
+.overlay h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ff7b00;
+}
+
+.overlay p {
+  font-size: 1rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
